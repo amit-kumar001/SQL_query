@@ -1,24 +1,24 @@
 # SQL_query
 ## Key features
 <ol>
-<li>class cursor:- Allows Python code to execute <strong>SQL</strong> commands in a database session. Cursor contains information on a selected statements written in sql. It executes statements accordingly.
+<li><em><strong>class cursor</em></strong>:- Allows Python code to execute <strong>SQL</strong> commands in a database session. Cursor contains information on a selected statements written in sql. It executes statements accordingly.
 <ol> 
   <li>How do you make a connection cursor in Python
   First:- Establish a connection to the <strong>SQL database</strong> by creating a connection object <strong>(db.cursor())</strong>. Next, create a cursor object using connection object <strong>(db.cursor())</strong>. Then, execute the statements.</li> 
 </li>
 </ol></br> 
 
-<li><strong>connection.commit()</strong>: Refer to the statement <strong>db.commit()</strong> for understanding <strong>connection.commit()</strong>. It is required to make the changes, otherwise no changes are made to the table.
+<li><em><strong>connection.commit()</em></strong>: Refer to the statement <strong>db.commit()</strong> for understanding <strong>connection.commit()</strong>. It is required to make the changes, otherwise no changes are made to the table.
 <ol>
 <li>This method sends a <strong> COMMIT</strong> statement to the <strong>MySQL server</strong>,<strong> Python/SQL</strong> does not have autocommit, it is important to call this method after every transaction that modifies data for tables which uses transactional storage engines. </li>
 </ol></br> 
-<li><strong>rollback</strong> used to restore the database to its original state.</li>
+<li><em><strong>rollback</em></strong> used to restore the database to its original state.</li>
 <ol>
 <li><strong>Connection.rollback</strong>- It refers to statement <strong>db.rollback()</strong>. It reverts the changes made by the current transaction.</li>
 </ol></br> 
 
 <li>To insert a single row into the table, we can use <strong>connection.execute().</strong> When we have to insert two or more than two rows into the table on that case we have to use <strong>connection.executemany()</strong> method.</li></br>
-<li>fetch:-
+<li><em><strong>fetch:-</em></strong>
 <ol>
 <li><strong>fetchall()</strong> method used to fetch all rows from the database table.</br>
 Let see the example below.</br>
@@ -43,7 +43,7 @@ Kandhari</br>
 (2, 'Sakshi', 'Rekhi', 889998899, datetime.datetime(2019, 3, 8, 10, 53))</br>
 </li></li></br> 
 </ol>
-<li>Data type
+<li><em><strong>Data type</em></strong>
 <ol>
 <li><strong>varchar</strong>:-It can be store 65,535 characters. But it has a limitation of maximum row size of 65,535 bytes. It means including all columns, it must not be more than 65,535 bytes.</li></br> 
 
@@ -51,7 +51,7 @@ Kandhari</br>
 <li>integer is a data type, by default value is int(11).</li></li>
 </ol></br>
 
-<li>Constraints:-
+<li><em><strong>Constraints:-</em></strong>
 <ol>
 <li>
   The <strong>NOT NULL</strong> constraint impose a column to not accept NULL values. which means that you cannot insert a new record, or update a record without adding a value to this field.
