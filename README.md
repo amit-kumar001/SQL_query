@@ -53,7 +53,8 @@ Kandhari</br>
 
 <li>Constraints:-
 <ol>
-<li>The <strong>NOT NULL</strong> constraint impose a column to not accept NULL values. which means that you cannot insert a new record, or update a record without adding a value to this field.
+<li>
+  The <strong>NOT NULL</strong> constraint impose a column to not accept NULL values. which means that you cannot insert a new record, or update a record without adding a value to this field.
 <ol>  
 <li>syntax for NOT NULL in new table:-</br>
      CREATE TABLE table_name (column_name1 datatype NOT NULL, column_name2 datatype NOT NULL, column_name3 datatype , column_name4 datatype)</li></br>
@@ -71,9 +72,9 @@ Kandhari</br>
 <li> syntax to delete UNIQUE constraints:-</br>
     ALTER TABLE Persons DROP INDEX column_name4</li>
 </ol>
+</li>
 
-<ol>
-<li> <strong>primary key</strong> is a field in a table which uniquely identifies each row/record in a database table. Primary keys must contain unique values. A primary key column cannot have NULL values.
+<li><strong>primary key</strong> is a field in a table which uniquely identifies each row or record in a database table. Primary keys must contain unique values. A primary key column cannot have NULL values.
 <ol>
 <li> syntax for primary key in new table:-</br>
       CREATE TABLE table_name (column_name1 datatype NOT PRIMARY KEY, column_name2 datatype NOT NULL,column_name3 datatype,column_name4 datatype)</li>
@@ -83,10 +84,12 @@ Kandhari</br>
 
 <li> syntax to delete primary key:-</br>
      ALTER TABLE table_name DROP PRIMARY KEY</li>
+</ol>     
+</li>
+
 </ol>
 </li>
 </ol>
-
 
 
 
