@@ -100,7 +100,6 @@ customer table:-</br>
 |       7 | rozzy  |   20 | shimla           |  18000 |
 +---------+--------+------+------------------+--------+</pre>
 
-
  ord table:-</br>
 <pre>+------+----------+--------+
 | id   | date     | name   |
@@ -114,18 +113,14 @@ customer table:-</br>
 
 </li>
 
-
-
-
-
-
 <li>Joins :- </br>
  Joins is used to combine records from two or more tables in a database. To join the tables from  one to another it combines common fields from each table.li>
  <ol><li>Inner Join :- </br>
  It selects records that have matching values in both tables.</br>
  syntax for inner joins</br></br>
   select table1_name.column1, table1_name.column2, table2_name.column1 from table1_name inner join table2_name on table1_name.column=table2_name.column</br>
-  output:- </br>
+ 
+ output:- </br>
 <pre>+--------+---------+----------+ 
 | name   | cust_id | date     | 
 +--------+---------+----------+ 
@@ -134,13 +129,13 @@ customer table:-</br>
 | rohan  |       3 | 4/8/2015 | 
 | sanam  |       2 | 3/3/2017 | 
 +--------+---------+----------+ </pre>
-
  </li>
 
 <li>Left Joins :- </br>
 The LEFT JOIN keyword returns all records from the left table (table1), and the matched records from the right table (table2).</br>
 syntax for Left join</br></br>
 select table1_name.column1, table1_name.column2, table2_name.column1 from table1_name left join table2_name on table1_name.column=table2_name.column</br>
+
 output:-</br>
 <pre>+--------+---------+----------+
 | name   | cust_id | date     |
@@ -156,6 +151,7 @@ output:-</br>
 RIGHT JOIN keyword returns all records from the right table (table2), and the matched records from the left table (table1).</br>
 syntax for Right join</br></br>
 select table1_name.column1, table1_name.column2, table2_name.column1 from table1_name right join table2_name on table1_name.column=table2_name.column</br>
+
 output:-</br>
 <pre>+--------+---------+----------+
 | name   | cust_id | date     |
