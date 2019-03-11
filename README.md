@@ -3,7 +3,7 @@
 <ol>
 <li><em><strong>class cursor</em></strong>:- Allows Python code to execute <strong>SQL</strong> commands in a database session. Cursor contains information on a selected statements written in sql. It executes statements accordingly.
 <ol> 
-  <li>How do you make a connection cursor in Python
+  <li>How do you make a connection cursor in Python</br>
   First:- Establish a connection to the <strong>SQL database</strong> by creating a connection object <strong>(db.cursor())</strong>. Next, create a cursor object using connection object <strong>(db.cursor())</strong>. Then, execute the statements.</li> 
 </li>
 </ol></br> 
@@ -48,7 +48,7 @@ Kandhari</br>
 <li><strong>varchar</strong>:-It can be store 65,535 characters. But it has a limitation of maximum row size of 65,535 bytes. It means including all columns, it must not be more than 65,535 bytes.</li></br> 
 
 <li><strong>MySQL TIMESTAMP</strong> is a data type that holds the combination of date and time. The format of a <strong>TIMESTAMP</strong> column is <strong>YYYY-MM-DD HH:MM:SS</strong> which is fixed at 19 characters. The TIMESTAMP value has a range from <strong>'1970-01-01 00:00:01'</strong> UTC(Coordinated Universal Time) to <strong>'2038-01-19 03:14:07'</strong> UTC</li></br>
-<li>integer is a data type, by default value is int(11).</li></li>
+<li><strong>Integer</strong> is a data type, by default value is int(11).</li></li>
 </ol></br>
 
 <li><em><strong>Constraints:-</em></strong>
@@ -74,7 +74,7 @@ Kandhari</br>
 </ol>
 </li>
 
-<li><strong>primary key</strong> is a field in a table which uniquely identifies each row or record in a database table. Primary keys must contain unique values. A primary key column cannot have NULL values.
+<li><strong>Primary key</strong> is a field in a table which uniquely identifies each row or record in a database table. Primary keys must contain unique values. A primary key column cannot have NULL values.
 <ol>
 <li> syntax for primary key in new table:-</br>
       CREATE TABLE table_name (column_name1 datatype NOT PRIMARY KEY, column_name2 datatype NOT NULL,column_name3 datatype,column_name4 datatype)</li>
