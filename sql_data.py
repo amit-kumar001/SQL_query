@@ -50,5 +50,27 @@ sql= "ALTER TABLE Persons DROP PRIMARY KEY " #to delete PRIMARY KEY constraints
 cursor.execute(sql)
 db.commit()
 
+#***********************************************************
+#joins
+sql = "select customer.name, customer.cust_id, ord.date from customer inner join ord on orcustomerd.name=ord.name"
+cursor.execute(sql)
+myresult = cursor.fetchall()
+for x in myresult:
+  print(x)
+
+sql = "select customer.name, customer.address, ord.date from customer LEFT JOIN ord on customer.name=ord.name"
+cursor.execute(sql)
+myresult = cursor.fetchall()
+for x in myresult:
+  print(x)
+
+
+sql = "select customer.name, customer.address, ord.date from customer right JOIN ord on customer.name=ord.name"
+cursor.execute(sql)
+myresult = cursor.fetchall()
+for x in myresult:
+  print(x)
+
+
 
 
